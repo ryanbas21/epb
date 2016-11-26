@@ -22,7 +22,7 @@ ContactusComponent = __decorate([
     core_1.Component({
         selector: 'contactus',
         providers: [contactus_service_1.ContactusService],
-        template: "\n\t<h2>Contact Us</h2>\n\t<div *ngFor=\"let person of contactPeople\">\n\t<p>\n\tName: {{person.name}}<br>\n\tEmail: <a href=\"mailto:{{person.email}}\">{{person.email}}</a><br>\n\tPhone: {{person.phone}}<br>\n\t</p>\n\t</div>\n\t",
+        template: "\n\t<nav class='navbar navbar-inverse'>\n\t<div class=\"container-fluid\">\n\t   <a class='navbar-brand' routerLink=\"/index\" routerLinkActive=\"inactive\">Home</a>\n\t   <a class='navbar-brand' routerLink=\"/articles\" routerLinkActive=\"inactive\">All Articles</a>\n\t   <a class='navbar-brand' routerLink=\"/contactus\" routerLinkActive=\"active\">Contact Us</a>\n\t   <a class='navbar-brand' routerLink=\"/disclaimer\" routerLinkActive=\"inactive\">Disclaimer</a>\n\t</div>\n\t</nav>\n\t<h2>Contact Us</h2>\n\t<div *ngFor=\"let person of contactPeople\">\n\t<p>\n\tName: {{person.name}}<br>\n\tEmail: <a href=\"mailto:{{person.email}}\">{{person.email}}</a><br>\n\tPhone: {{person.phone}}<br>\n\t</p>\n\t</div>\n\t",
         styles: [
             "\n\t\tp {\n\t\t\tcolor: #660000;\n\t\t\tfont-family: 'Arial';\n\t\t}\n\t\t"
         ]

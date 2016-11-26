@@ -8,7 +8,7 @@ import { IndexSubTitleComponent } from './index-sub-title.component';
 <div class="container-fluid">
    <a class='navbar-brand' routerLink="/index" routerLinkActive="active">Home</a>
    <a class='navbar-brand' routerLink="/articles" routerLinkActive="inactive">All Articles</a>
-   <a class='navbar-brand' routerLink="/contact" routerLinkActive="inactive">Contact Us</a>
+   <a class='navbar-brand' routerLink="/contactus" routerLinkActive="inactive">Contact Us</a>
    <a class='navbar-brand' routerLink="/disclaimer" routerLinkActive="inactive">Disclaimer</a>
 </div>
 </nav>

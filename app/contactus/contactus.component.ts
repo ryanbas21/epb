@@ -7,6 +7,14 @@ import { ContactusService } from './contactus.service';
 	selector: 'contactus',
 	providers: [ ContactusService ],
 	template: `
+	<nav class='navbar navbar-inverse'>
+	<div class="container-fluid">
+	   <a class='navbar-brand' routerLink="/index" routerLinkActive="inactive">Home</a>
+	   <a class='navbar-brand' routerLink="/articles" routerLinkActive="inactive">All Articles</a>
+	   <a class='navbar-brand' routerLink="/contactus" routerLinkActive="active">Contact Us</a>
+	   <a class='navbar-brand' routerLink="/disclaimer" routerLinkActive="inactive">Disclaimer</a>
+	</div>
+	</nav>
 	<h2>Contact Us</h2>
 	<div *ngFor="let person of contactPeople">
 	<p>
