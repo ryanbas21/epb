@@ -17,8 +17,10 @@ var router_1 = require("@angular/router");
 var index_sub_title_component_1 = require("./homepage/index-sub-title.component");
 var index_trial_btn_component_1 = require("./homepage/index-trial-btn.component");
 var graph_component_1 = require("./homepage/graph.component");
+var contactus_component_1 = require("./contactus/contactus.component");
 var appRoutes = [
     { path: 'index', component: index_component_1.IndexComponent },
+    { path: 'contactus', component: contactus_component_1.ContactusComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -31,7 +33,7 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(appRoutes)
         ],
-        declarations: [app_component_1.AppComponent, index_title_component_1.IndexTitleComponent, index_component_1.IndexComponent, index_sub_title_component_1.IndexSubTitleComponent, index_trial_btn_component_1.IndexTrialButton, graph_component_1.Graph],
+        declarations: [app_component_1.AppComponent, index_title_component_1.IndexTitleComponent, index_component_1.IndexComponent, index_sub_title_component_1.IndexSubTitleComponent, index_trial_btn_component_1.IndexTrialButton, graph_component_1.Graph, contactus_component_1.ContactusComponent],
         bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])

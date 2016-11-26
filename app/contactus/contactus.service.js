@@ -9,17 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var ContactusService = (function () {
+    function ContactusService() {
     }
-    return AppComponent;
+    ContactusService.prototype.getContacts = function () {
+        return [
+            { name: "Ryan", email: "ryans@email.com", phone: "123-456-7890" },
+            { name: "RyansBrother", email: "ryansbrothersemail@email.com", phone: "123-456-7891" }
+        ];
+    };
+    return ContactusService;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "\n\t<router-outlet></router-outlet>\n\t"
-    }),
+ContactusService = __decorate([
+    core_1.Injectable(),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ContactusService);
+exports.ContactusService = ContactusService;
+//# sourceMappingURL=contactus.service.js.map
