@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var IndexTitleComponent = (function () {
+    function IndexTitleComponent() {
     }
-    return AppComponent;
+    return IndexTitleComponent;
 }());
-AppComponent = __decorate([
+IndexTitleComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: '<router-outlet></router-outlet><h1></h1>'
+        selector: '<index></index>',
+        template: "<div class='jumbotron'>\n            <h1 class='title'>EPB Advising</h1>\n            </div>",
+        styles: ["\n    .title {\n      text-align: center;\n    }"]
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], IndexTitleComponent);
+exports.IndexTitleComponent = IndexTitleComponent;
+//# sourceMappingURL=index-title.component.js.map

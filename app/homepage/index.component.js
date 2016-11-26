@@ -9,17 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var IndexComponent = (function () {
+    function IndexComponent() {
     }
-    return AppComponent;
+    return IndexComponent;
 }());
-AppComponent = __decorate([
+IndexComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: '<router-outlet></router-outlet><h1></h1>'
+        selector: 'in',
+        template: "\n<nav>\n</nav>\n  <div class='container'>\n    <div style='col-md-4 jumbotron'></div>\n    <index style='col-md-4'></index>\n    <div style='col-md-4 jumbotron'></div>\n\n  </div>"
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], IndexComponent);
+exports.IndexComponent = IndexComponent;
+//# sourceMappingURL=index.component.js.map
