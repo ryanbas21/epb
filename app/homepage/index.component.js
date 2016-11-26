@@ -17,7 +17,9 @@ var IndexComponent = (function () {
 IndexComponent = __decorate([
     core_1.Component({
         selector: 'in',
-        template: "\n<nav>\n</nav>\n  <div class='container'>\n    <div style='col-md-4 jumbotron'></div>\n    <index style='col-md-4'></index>\n    <div style='col-md-4 jumbotron'></div>\n\n  </div>"
+        template: "\n<nav class='navbar navbar-inverse'>\n<div class=\"container-fluid\">\n   <a class='navbar-brand' routerLink=\"/index\" routerLinkActive=\"active\">Home</a>\n   <a class='navbar-brand' routerLink=\"/articles\" routerLinkActive=\"inactive\">All Articles</a>\n   <a class='navbar-brand' routerLink=\"/contact\" routerLinkActive=\"inactive\">Contact Us</a>\n   <a class='navbar-brand' routerLink=\"/disclaimer\" routerLinkActive=\"inactive\">Disclaimer</a>\n</div>\n</nav>\n  <div class='container'>\n    <div style='col-md-4 jumbotron'></div>\n    <div style='col-md-4'>\n      <index></index>\n      <sub></sub>\n      <graph></graph>\n    </div>\n    <div style='col-md-4 jumbotron'>\n</div>\n  </div>\n\n<div class='center-btn'>\n  <btn></btn>\n</div>\n\n  ",
+        styles: ["\n    .center-btn {\n      margin-left: auto;\n      margin-right: auto;\n      width: 100px }"
+        ]
     }),
     __metadata("design:paramtypes", [])
 ], IndexComponent);

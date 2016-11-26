@@ -14,6 +14,9 @@ var app_component_1 = require("./app.component");
 var index_title_component_1 = require("./homepage/index-title.component");
 var index_component_1 = require("./homepage/index.component");
 var router_1 = require("@angular/router");
+var index_sub_title_component_1 = require("./homepage/index-sub-title.component");
+var index_trial_btn_component_1 = require("./homepage/index-trial-btn.component");
+var graph_component_1 = require("./homepage/graph.component");
 var appRoutes = [
     { path: 'index', component: index_component_1.IndexComponent },
 ];
@@ -28,7 +31,7 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(appRoutes)
         ],
-        declarations: [app_component_1.AppComponent, index_title_component_1.IndexTitleComponent, index_component_1.IndexComponent],
+        declarations: [app_component_1.AppComponent, index_title_component_1.IndexTitleComponent, index_component_1.IndexComponent, index_sub_title_component_1.IndexSubTitleComponent, index_trial_btn_component_1.IndexTrialButton, graph_component_1.Graph],
         bootstrap: [app_component_1.AppComponent]
     }),
     __metadata("design:paramtypes", [])
